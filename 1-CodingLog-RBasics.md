@@ -16,7 +16,7 @@
 
 ## Challenges & Problem-Solving
 
-### Challenge 1: [Brief descriptive title]
+### Challenge 1: [Issues with Github connecting to VS Code]
 
 **What I was trying to do:**
 I was attempting to make my first commits to github from VS Code when I encountered failure messages.
@@ -41,17 +41,17 @@ I ran into an issue with my first attempt to commit. VS Code could not identify 
 Ultimately, reading back through the git failure data in my terminal helped the most. It told me how to reconnect my github account to the VS Code interface.
 
 **What I learned:**
-I learned to not be afraid to look back through the terminal for specific errors and advice. This may sound silly, but the terminial is rather intimidating at first glance. I also have a hard time visually disciphering information within it. I think it visually overloads my brain. Perhaps, overtime, I will get more used to it.
+I learned to not be afraid to look back through the terminal for specific errors and advice. This may sound silly, but the terminial is rather intimidating at first glance. I also have a hard time visually disciphering information within it. I have a photographic memory and the appearance of code in the terminal seems to overload my ability to process. I am hoping that with time,as I learn more about coding, this information with in the terminial will become more meaningful and I will be better at visually identifying what I see. For me to be able to go into the terminal and find what I needed to fix my github issue was a major win.
 
 ---
 
-### Challenge 2: [Brief descriptive title]
+### Challenge 2: [Not being able to open a dataset from the DigitalMethodsData]
 
 **What I was trying to do:**
-[Describe the task or problem]
+I attempted to load the undergroundRR dataset from the DigitalMethodsData file to complete my worksheet.   
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I 
 
 **My problem-solving process:**
 1. [First attempt - what you did and what happened]
