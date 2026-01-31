@@ -1,0 +1,116 @@
+# Week [1] Learning Log
+
+**Student Name:** [Dori Impson]  
+**Week of:** [01/26/2026 - 02/02/2026]  
+**Topic(s):** [e.g., "Basics of R"]
+
+---
+
+## What I Worked On This Week
+
+**Assignment(s):**
+- [x] Worksheet [1]
+- [ ] Other: [describe]
+
+---
+
+## Challenges & Problem-Solving
+
+### Challenge 1: [Brief descriptive title]
+
+**What I was trying to do:**
+I was attempting to make my first commits to github from VS Code when I encountered failure messages.
+
+**What went wrong:**
+I ran into an issue with my first attempt to commit. VS Code could not identify my github account. After trouble-shooting and googling the issue, I had to reintroduce my github account to VS code by identifying my user name and email.  After doing this, I was able to push commits with no problem. After rectifying the user/id issue, I also had a issue with merging my work inorder to commit. This was easier to fix. I am not sure why the user/id issue happended in the first place.
+
+**My problem-solving process:**
+1. First attempt - I attempted to commit multiple times in VS Code, thinking that somehow my unfamiliarity with the interface was the issue.
+2. Second attempt - I googled the error message to try to understand what I could do to reconnect my github account to the VS Code App
+3. [Additional attempts- what helped most was scrolling through the git code in the VS Code terminal and following the prompts there. This actually helped the most.
+
+**Resources I consulted:**
+- [x ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [x] Other: [describe] Just precisely worded google searches to try to identify the problem and how to fix it.
+
+**Resolution:**
+Ultimately, reading back through the git failure data in my terminal helped the most. It told me how to reconnect my github account to the VS Code interface.
+
+**What I learned:**
+I learned to not be afraid to look back through the terminal for specific errors and advice. This may sound silly, but the terminial is rather intimidating at first glance. I also have a hard time visually disciphering information within it. I think it visually overloads my brain. Perhaps, overtime, I will get more used to it.
+
+---
+
+### Challenge 2: [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+### Challenge 3 (Optional): [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+## Reflection
+
+**What I understand well now:**
+[What clicked for you this week?]
+
+**What I'm still confused about:**
+[What remains unclear? What questions do you have?]
+
+**Connection to historical research:**
+[How might this week's skills apply to your research?]
+
