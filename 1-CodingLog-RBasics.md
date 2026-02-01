@@ -10,7 +10,7 @@
 
 **Assignment(s):**
 - [x] Worksheet [1]
-- [ ] Other: [describe]
+- [x ] Other: [describe]I also worked on the r tutorial on codecademy before class.
 
 ---
 
