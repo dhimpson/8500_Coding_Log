@@ -16,36 +16,50 @@
 
 ## Challenges & Problem-Solving
 
-### Challenge 1: [Brief descriptive title]
+### Challenge 1: Getting to the final step (solving) of the Challenge 1 problem
 
 **What I was trying to do:**
-[Describe the task or problem]
+After completing steps 1 to 4 of challenge 1, I realized that I still had not solved the initial problem of finding all of the locations in California in the 1970s. 
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I could not recall how to see inside of my variable to see the info that I had created a subset for.
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
+1. I revisited my notes and decided to use the typeof() function to try to identify the data in my dataset. My data is logical. Logical data only lists TRUE and FALSE. I need locations... this is a problem.
+2. I began to reevaluate my process. For reference, here is what I originally had:
+  ```{r}
+gayguides$state=="CA"
+```
+```{r}
+is_1970s <- gayguides$date >= "1970-01-01" & gayguides$date <= "1979-12-31"
+```
+```{r}
+CA_70s <- is_1970s & gayguides$state=="CA"
+typeof(CA_70s)
+(CA_70s)
+```
+I googled everything step by step. Right away, i noticed that I did not create a logical vector in step 1.
+I redid step one and created a logical vector. ca_locations <- gayguides$state=="CA". I kept my work on step 2. Then I combined my conditions of ca_locations and is_1970s to the new variable of CA_70s
+ I think I did this correctly and its just a logical vector at the end that does not display a "list" of locations, but I am not sure.
 3. [Additional attempts if relevant]
 
 **Resources I consulted:**
 - [ ] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
-- [ ] Course materials: [which ones]
+- [ x] Course materials: class notes
 - [ ] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ x] Other: google/internet search
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+how do i get a list of locations from a logical vector
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+I learned how to combine vectors using "&"
 
 ---
 
-### Challenge 2: [Brief descriptive title]
+### Challenge 2: Finding Data about Boston Women Voters
 
 **What I was trying to do:**
 [Describe the task or problem]
