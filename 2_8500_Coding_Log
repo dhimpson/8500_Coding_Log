@@ -59,32 +59,32 @@ I learned how to combine vectors using "&"
 
 ---
 
-### Challenge 2: Finding Data about Boston Women Voters
+### Challenge 2: Finding Data about Boston Women Voters for extra practice
 
 **What I was trying to do:**
-[Describe the task or problem]
+I was trying to find out how many women in the dataset are listed as "housewife"
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+Attempting to follow my previous example from the challenge 2 question but it returned void.
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
+1. First attempt - I decided to use str()to see the titles of variables within the dataset and make sure that I have not misspelled/mislabled something.
+2. Second attempt - I followed the steps of what I did in Challenge 2 and used the sum() function to find the number of women who had housewives listed as their occupation (3167)
 3. [Additional attempts if relevant]
 
 **Resources I consulted:**
-- [ ] Documentation for [package/function]
+- [x ] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
-- [ ] Course materials: [which ones]
-- [ ] Slack discussion
+- [x ] Course materials: worksheet 2
+- [ x] Slack discussion
 - [ ] Office hours
 - [ ] Other: [describe]
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+this code worked sum(BostonWomenVoters$Occupation == "Housewife")
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+I learned how to find the total number of entries of a subset of a dataset.
 
 ---
 
@@ -120,11 +120,11 @@ I learned how to combine vectors using "&"
 ## Reflection
 
 **What I understand well now:**
-[What clicked for you this week?]
+R is clicking more for me. It is still like a foreign land, but I think I am understanding the basics more and things are not quite as hard as they were two weeks ago. I do not feel quite as lost. I have a greater understanding of what to google and how to phrase my google prompts to get a better solution.
 
 **What I'm still confused about:**
-[What remains unclear? What questions do you have?]
+Challege 1 question is still bothering me. I think I was supposed to have an actual list of places to answer the question with, however since I ended up with a logical vector, I just got a list of TRUE and FALSE. I know that we went over this in class on Wednesday, but my notes are not really helping.
 
 **Connection to historical research:**
-[How might this week's skills apply to your research?]
+The ability to subset my data on Little Texas and see what occupations were over time and by gender will be very useful. Current research on Greenville's Black communities says that the only middle class neighborhood with "professional" jobs was the Haynie-Sirrine neighborhood. I am interested in seeing if that is true and being able to subset my data by occupation will be most useful.
 
