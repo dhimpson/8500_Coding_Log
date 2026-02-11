@@ -1,0 +1,116 @@
+# Week [3] Learning Log
+
+**Student Name:** [Your name]  
+**Week of:** [Date range]  
+**Topic(s):** Functions and Loops
+
+---
+
+## What I Worked On This Week
+
+**Assignment(s):**
+- [ ] Worksheet [3]
+- [ ] Other: [describe]
+
+---
+
+## Challenges & Problem-Solving
+
+### Challenge 1: [Brief descriptive title]
+
+**What I was trying to do:**
+I was trying to Create a list of presidents and store it in a variable. Use an `if` statement to check if the number of presidents in the list is more than 5. 
+
+**What went wrong:**
+I could not get my list of presidents to be accepted as a variable. Originally this is what I had: list_of_presidents <- ("Carter", "Regan","HWBush","Clinton", "WBush","Obama")
+
+**My problem-solving process:**
+1. I removed all the "" thinking that maybe I put them in the list by accident.
+2. I reinserted the "" and removed the , between items
+3. I reinserted both and then googled my code. I then realized that I had forgot to add the 'c' in front of the () to tell r what to do with the list (concatenate). 
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ x] Other: Google
+
+**Resolution:**
+My list then looked like this: list_of_presidents <- c("Carter", "Regan","HWBush","Clinton", "WBush","Obama") However,later,I could not get my 'if' statemet to work. I realized that I had forgot to add the length() function to my list in my 'if' statement to tell the program to see the list as a number of items.
+
+**What I learned:**
+This reminded me to be careful to make sure that I have all of the correct pieces of my code in before I run it. Also the issue with length made me stop and question if I had given the program all of the necessary information it needs to perform the function that I have asked it to do.
+
+---
+
+### Challenge 2: [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+### Challenge 3 (Optional): [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+## Reflection
+
+**What I understand well now:**
+[What clicked for you this week?]
+
+**What I'm still confused about:**
+[What remains unclear? What questions do you have?]
+
+**Connection to historical research:**
+[How might this week's skills apply to your research?]
+
