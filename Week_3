@@ -48,10 +48,18 @@ This reminded me to be careful to make sure that I have all of the correct piece
 ### Challenge 2: [Brief descriptive title]
 
 **What I was trying to do:**
-[Describe the task or problem]
+Find the first 5 locations of New York City in the gayguides data (use next, break, and create a counter).
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+Cannot seem to get past this problem.(line number 192- question concerning NYC in gayguides) Here is the beginning code that I have:
+for (i in 1:length(gayguides$city)) {
+  (if [i] != New York City)
+  next
+  (if [i] = New York City)
+  print([i], 5)
+  break
+}
+```
 
 **My problem-solving process:**
 1. [First attempt - what you did and what happened]
