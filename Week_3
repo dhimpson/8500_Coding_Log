@@ -82,32 +82,45 @@ for (i in 1:length(gayguides$city)) {
 
 ---
 
-### Challenge 3 (Optional): [Brief descriptive title]
+### Challenge 3 (Optional): Finding voter's occupations in the Boston Women Voters data.
 
-**What I was trying to do:**
-[Describe the task or problem]
+**What I was trying to do:** 
+I was trying to write a function that accepts the name of an occupation. Ultimately, I needed my function to return new dataframe that includes the records for every voter listed with that occupation. This was very tricky. Here is my final product. 
+
+bwv.occupations <- function(job_title) { 
+  data(BostonWomenVoters)
+  result <- data.frame()
+  for (i in 1:nrow(BostonWomenVoters)) {
+    if (BostonWomenVoters$Occupation[i] == job_title)
+  {
+    result <- rbind(result, BostonWomenVoters[i, ])
+
+  }
+   
+  return (result)
+}}
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+First, I had my data frame inside of my function, which caused issues. Then I could not seem to get my entire function to print out a result.
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
-3. [Additional attempts if relevant]
+1. First attempt - googled each piece of the question: ie. reviewed how to create a function. Tried to make sure that my function was loaded into my enviroment, but it would not load no matter what I did. I googled this and finally realized that R was not activated. I am not sure why, but I had times this week where R would deactivate repeatedly as I was working. Once I reactivated it, my function loaded appropriately.
+2. After getting past the hurdle with R, I still could not get a dataframe to show me the voting records by occupation. I checked my captialization and spaces. I could not find where the mistake was.
+3. I copied the code and placed it in Slack. Dr. R pointed out that I was missing a set of brackets, which proved to be the trick.
 
 **Resources I consulted:**
-- [ ] Documentation for [package/function]
+- [x ] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
-- [ ] Course materials: [which ones]
-- [ ] Slack discussion
+- [ x] Course materials: scrolled up the WS for previous examples, also course notes
+- [ X] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ X] Other: Google search
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+Adding brackets resolved this. I am still a little confused about when and where to place curly brackets.
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+I learned to be thorough in my code and to track down the beginning and ending brackets.
 
 ---
 
