@@ -1,8 +1,8 @@
 # Week [3] Learning Log
 
-**Student Name:** [Your name]  
-**Week of:** [Date range]  
-**Topic(s):** Functions and Loops
+**Student Name:** Dori Impson
+**Week of:** 2/10 -2/16 
+**Topic(s):** Functions, Conditional, and Loops
 
 ---
 
@@ -48,37 +48,31 @@ This reminded me to be careful to make sure that I have all of the correct piece
 ### Challenge 2: [Brief descriptive title]
 
 **What I was trying to do:**
-Find the first 5 locations of New York City in the gayguides data (use next, break, and create a counter).
+I was trying to do the problem on line 355, "Write a function that accepts two arguments: a state and a year. My function should ultimately pull all of the locations in state and year and return a statement letting me know that it found locations in a specified state within a certain year.
 
 **What went wrong:**
-Cannot seem to get past this problem.(line number 192- question concerning NYC in gayguides) Here is the beginning code that I have:
-for (i in 1:length(gayguides$city)) {
-  (if [i] != New York City)
-  next
-  (if [i] = New York City)
-  print([i], 5)
-  break
-}
-```
+It took me a long time to set up the function to accept two arguments and to understand how to get my conditons set up correctly. Then it just would not work at all.
+
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
-3. [Additional attempts if relevant]
+1. First attempt - check to make sure I have my data and function loaded.
+2. Second attempt- check brackets and parentheses. 
+
+3. Google other possible problems. Then realize that I have 'State' instead of'state' in gayguides$state. Once I fixed this, everything worked.
 
 **Resources I consulted:**
-- [ ] Documentation for [package/function]
+- [ x] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
 - [ ] Course materials: [which ones]
 - [ ] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ x] Other: Googled possible issues
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+Checking for capitalization
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+This reminded me to be careful of matching my code with what is in the database.
 
 ---
 
