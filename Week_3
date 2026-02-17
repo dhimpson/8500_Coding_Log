@@ -2,7 +2,7 @@
 
 **Student Name:** Dori Impson
 **Week of:** 2/10 -2/16 
-**Topic(s):** Functions, Conditional, and Loops
+**Topic(s):** Functions, Conditionals, and Loops
 
 ---
 
@@ -121,11 +121,11 @@ I learned to be thorough in my code and to track down the beginning and ending b
 ## Reflection
 
 **What I understand well now:**
-[What clicked for you this week?]
+I would say that I have an emerging understanding of loops, functions, and conditionals. It still took me quite  while to get my code to work on the worksheet and I still remain heavily dependent upon looking up almost every issue that I have with Google. I am trying to remind myself that I am learning a language and more understanding will come with time and experience.
 
 **What I'm still confused about:**
-[What remains unclear? What questions do you have?]
+I still have a hard time understanding when to put spaces and the use of curly brackets. I do not understand why R sometimes goes inactive in Visual Studio and has to be reactivated. I have a hard time remembering which function to use. I think I just need more practice with R. 
 
 **Connection to historical research:**
-[How might this week's skills apply to your research?]
+I know that loops, functions, and conditionals will enable me to create code to query my database for Little Texas. I believe that these coding tools will be useful when I look at occupations and home ownership in my database. I can see how many homeowners held certain occupations. Were there certain occupations that seemed to be more profitable and potentially resulted in an increase in home ownership? A loop with conditionals could assist in finding these answers.
 
