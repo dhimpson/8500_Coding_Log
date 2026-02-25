@@ -1,1 +1,133 @@
+# Week [X] Learning Log
+
+**Student Name:** Dori Impson 
+**Week of:** [Date range]  
+**Topic(s):** Basic Data Manipulation
+
+---
+
+## What I Worked On This Week
+
+**Assignment(s):**
+- [ ] Worksheet [#4]
+- [ ] Other: [describe]
+
+---
+
+## Challenges & Problem-Solving
+
+### Challenge 1: [Brief descriptive title]
+
+**What I was trying to do:**
+This problem: Can you find all locations in 1975 except for New York and San Francisco? Here is my code:
+
+locations_in_1975 <- gayguides %>% filter(city - "New York" & city - "San Francisco") %>%
+filter(Year = 1975)
+
+**What went wrong:**
+Could not get code to run. I have two errors: one says that the "editor selection is not within an executable cell". I copied it and pasted into the cell below this problem and then ran the code. Then, I received the following error message:
+> locations_in_1975 <- gayguides %>% filter(city - "New York" & city - "San Francisco") %>%
+filter(Year = 1975)
++ filter(Year = 1975)
+Error in `filter()`:
+ℹ In argument: `city - "New York" & city - "San
+  Francisco"`.
+Caused by error in `city - "New York"`:
+! non-numeric argument to binary operator
+Run `rlang::last_trace()` to see where the error occurred.
+
+**My problem-solving process:**
+1. First attempt- I am unsure of how to tell R to not include New York and San Francisco. I think that is where my error is. I am going to remove the minuses and try something else.
+2. Second attempt - I removed the minuses and added back the  equal sign that I had from a previous attempt. I am adding a ! in front of the = to see if that works. I also added == for year. My corrected code looks like this:
+locations_in_1975 <- gayguides %>% filter(city != "New York" & city != "San Francisco") %>%
+filter(Year == 1975)
+
+
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ x] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ x] Course materials: [which ones] notes from Monday's class
+- [ ] Slack discussion
+- [ ] Office hours
+- [ x] Other: Quick google search of the problem.
+
+**Resolution:**
+Using the ! sign in addition to the = provided what I needed to exclude these two cities. 
+
+**What I learned:**
+ I tried -= to exclude the two cities. Then I tried !==. Neither of these worked. From my notes I noticed that we used - in class with select(), but that was when we were choosing to not include whole columns in the datasest (ie. city or state). The != allowed me to narrow it down to specific cities.
+
+---
+
+### Challenge 2: [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+### Challenge 3 (Optional): [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+## Reflection
+
+**What I understand well now:**
+[What clicked for you this week?]
+
+**What I'm still confused about:**
+[What remains unclear? What questions do you have?]
+
+**Connection to historical research:**
+[How might this week's skills apply to your research?]
+
 
