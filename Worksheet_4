@@ -10,7 +10,7 @@
 
 **Assignment(s):**
 - [ ] Worksheet [#4]
-- [ ] Other: [describe]
+- [ ] Other: I also began to work through R for Data Science again as more practice. I created a folder for the exercises that can be accessed via github. I began this after Wednesday's class where I struggled recalling how to do basic things. More practice (and rereading the text) seems to be helping as I work through the remainder of this week's worksheet. I am not needing to google as much to figure out how to get my code to work. 
 
 ---
 
@@ -61,32 +61,34 @@ Using the ! sign in addition to the = provided what I needed to exclude these tw
 
 ---
 
-### Challenge 2: [Brief descriptive title]
+### Challenge 2: = vs. == 
 
 **What I was trying to do:**
-[Describe the task or problem]
+I was attempting the worksheet problem on BostonWomenVoters where I needed to create a new column called `ward_missing` that is TRUE when Ward is NA and FALSE otherwise?
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I almost had the code right, but it just would not work. Here is what I had: 
+BostonWomenVoters %>% 
+  mutate(ward_missing == is.na(Ward))
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
+1. First attempt - I first double checked my notes regarding mutate() and creating a new column and using is.na to get a TRUE/FALSE response of the presence of NA in rows. It looked like my code should have worked.
+2. Second attempt - I did not check the == to see if it was the problem. I ended up coping my code and putting it in google. It looks like the == was creating an issue. The == was making R look for a column called 'ward_missing' which did not exist. I needed to use a single = to give the command for a new column called 'ward missing' to be created and to then fill it with the results of is.na(ward). Switching to = seemed to fix the problem.
 3. [Additional attempts if relevant]
 
 **Resources I consulted:**
 - [ ] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
-- [ ] Course materials: [which ones]
+- [ x] Course materials: [which ones] class notes and notes from R for Data Science
 - [ ] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ x] Other: Google search as noted above
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+Ultimately, this worked, but I still get confused about when to use == and when to use =. What I read said to use = when attempting to define arguments or new column names inside functions like mutate() select() or filter().
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+I learned how to create a new column and move rows with missing data into it. I think this could be helpful when working with a dataset that may be fragmentary and missing information.
 
 ---
 
