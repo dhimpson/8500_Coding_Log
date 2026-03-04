@@ -1,1 +1,128 @@
+# Week [5] Learning Log
+
+**Student Name:** Dora Impson
+**Week of:** March 2 
+**Topic(s):** Advanced Data Manipulation
+
+---
+
+## What I Worked On This Week
+
+**Assignment(s):**
+- [ ] Worksheet 5
+- [ ] Other: [describe]
+
+---
+
+## Challenges & Problem-Solving
+
+### Challenge 1: Difficulty with Summarize()
+
+**What I was trying to do:**
+In the `gayguides` data, on average how many locations did each city in South Carolina have between 1970 and 1975?
+
+**What went wrong:**
+I ran my code in stages and it worked until I got to the summarize function. Here is my code:
+```{r}
+gayguides %>% 
+  group_by(state, Year) %>%
+  summarize(Year >= 1970 & Year <= 1975)
+```
+I recieved the following error: 
+Error in `summarize()`:
+ℹ In argument: `Year >= 1970 & Year <= 1975`.
+ℹ In group 1: `state = "AK"`, `Year = 1966`.
+Caused by error:
+! `Year >= 1970 & Year <= 1975` must be size 1, not 2.
+ℹ To return more or less than 1 row per group, use `reframe()`
+
+**My problem-solving process:**
+1. I think that I need to use filter() somewhere in addition to summarize(), I just am not sure where. Filter seems like it would work with narrowing down the years that I need.
+2. Second attempt: 
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+### Challenge 2: [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+### Challenge 3 (Optional): [Brief descriptive title]
+
+**What I was trying to do:**
+[Describe the task or problem]
+
+**What went wrong:**
+[Describe the error, confusion, or roadblock]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+**Resolution:**
+[What ultimately worked or where you're still stuck]
+
+**What I learned:**
+[What did this teach you about the concept, the tool, or problem-solving?]
+
+---
+
+## Reflection
+
+**What I understand well now:**
+[What clicked for you this week?]
+
+**What I'm still confused about:**
+[What remains unclear? What questions do you have?]
+
+**Connection to historical research:**
+[How might this week's skills apply to your research?]
 
