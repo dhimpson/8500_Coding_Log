@@ -60,29 +60,38 @@ Caused by error:
 ### Challenge 2: [Brief descriptive title]
 
 **What I was trying to do:**
-[Describe the task or problem]
+I was attempting to use pivot_longer to lengthen the rec.spaces dataframe. Here is the code that I wrote to do so and the error that I received:
+rec.spaces <- read.csv("https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/PlayAreabyType.csv")
+pivot_longer(!type, names_to = "year")
+> pivot_longer(!type, names_to = "year")
+Error: object 'type' not found
+
+This did not make sense because I knew that the column name "type" was correct and was listed in the rec.spaces data.
+
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I had forgotten to create a new dataframe at the start of the code. So when I asked the computer to overlook the type column and work on lengthening by year, it had no reference of where the type column was.
 
 **My problem-solving process:**
-1. [First attempt - what you did and what happened]
-2. [Second attempt - what you did and what happened]
+1. I changed captialization on type to Type. This did not work.
+2. I realized that I had not created a new dataframe to pass the lengthened data onto. I also realized that I had forgotten to use the pipe. 
 3. [Additional attempts if relevant]
 
 **Resources I consulted:**
-- [ ] Documentation for [package/function]
+- [ x] Documentation for [package/function]
 - [ ] Stack Overflow: [describe what you searched for]
-- [ ] Course materials: [which ones]
+- [ x] Course materials: previous examples on the worksheet and class notes
 - [ ] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ x] Other: looked up how to use the pivot_longer function
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
-
+This code worked:
+rec.spaces.new <- rec.spaces %>%
+pivot_longer(!type, names_to = "year") 
+View(rec.spaces.new)
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+This just reinforced the need to slow down and thinking through each little step. I think things are finally clicking for me.
 
 ---
 
