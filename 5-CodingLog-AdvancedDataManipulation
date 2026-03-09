@@ -42,18 +42,24 @@ Caused by error:
 3. [Additional attempts if relevant]
 
 **Resources I consulted:**
-- [ ] Documentation for [package/function]
-- [ ] Stack Overflow: [describe what you searched for]
+- [ x] Documentation for [package/function]
+- [ x] Stack Overflow: [describe what you searched for]
 - [ ] Course materials: [which ones]
 - [ ] Slack discussion
 - [ ] Office hours
-- [ ] Other: [describe]
+- [ x] Other: [describe] google
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+I eventually got it to work. Here is the final code:gayguides %>% 
+  filter(state == "SC", Year >= 1970 & Year <= 1975) %>%
+  group_by(city, Year) %>%
+  summarize(location_count = n(), na.rm = TRUE) %>%
+  group_by(city) %>%
+  summarize(avg_locations = mean(location_count))
+```
 
 **What I learned:**
-[What did this teach you about the concept, the tool, or problem-solving?]
+I learned how to use these tools to find the average location for a certain year span.
 
 ---
 
@@ -127,11 +133,11 @@ This just reinforced the need to slow down and thinking through each little step
 ## Reflection
 
 **What I understand well now:**
-[What clicked for you this week?]
+I feel like things are coming faster for me. Overall, I don't feel quite as lost. 
 
 **What I'm still confused about:**
-[What remains unclear? What questions do you have?]
+I remain stuck on syntax. It just feels like trial and error sometimes.
 
 **Connection to historical research:**
-[How might this week's skills apply to your research?]
+
 
