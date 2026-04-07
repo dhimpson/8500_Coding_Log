@@ -2,7 +2,7 @@
 
 **Student Name:** Dora Impson  
 **Week of:** March 30 - April 6
-**Topic(s):** [e.g., "Data Visualization with ggplot"]
+**Topic(s):**  "Data Visualization with ggplot
 
 ---
 
@@ -14,9 +14,9 @@
 
 **AI tools used this week:**
 - [ ] ChatGPT
-- [ ] Claude
-- [ ] GitHub Copilot
-- [ ] Other: [specify]
+- [ X] Claude
+- [ X] GitHub Copilot
+- [ X] Other: Google Gemini
 - [ ] Did not use AI this week
 
 ---
@@ -26,12 +26,12 @@
 ### Challenge 1: [Brief descriptive title]
 
 **What I was trying to do:**
-[Describe the task or problem]
+I was trying to understand why R would not remain attached to the terminal.
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+R would disattach frequently and would not reattach. I used GitHub Copilot to troubleshoot this as well as Google Gemini. 
 
-**Did you use AI to troubleshoot this challenge?** [Yes / No]
+**Did you use AI to troubleshoot this challenge?** Yes
 
 ---
 
@@ -39,31 +39,32 @@
 
 **My prompt to AI:**
 ```
-[Copy your exact prompt here]
+R is not attached to my workspace on VS code. Explain why this is. Show me steps to keep R attached
 ```
 
 **AI's response:**
 ```r
-# Paste the relevant code or explanation AI provided -- this can brief and abbreviated or summarized if the response is long.
+I do not have the exact responses- but I was told to check VS Code for updates and then to also check where my VS Code was stored on my computer (it was in downloads, I fixed this). I also changed the settings of VS code to keep R attached. 
 ```
 
 **How I evaluated the AI's suggestion:**
+The suggestions were not bad, but after the problem persisted, I reached out to Dr. R for help. 
 
 **What I implemented and why:**
-[Which parts of the AI's suggestion were appropriate?]
+I followed the advice to check where VS code was saved and to update the program.
 
 **What I modified and why:**
-[What did you change? Why was the change necessary?]
+
 
 **What I rejected and why:**
-[What suggestions did you not use? Why were they inappropriate?]
+After things just did not work, I decided to ask for assistance. Wifi issues were the culprit and they have resolved.
 
 **Additional resources I consulted:**
-- [ ] Documentation for [package/function]
+- [x ] Documentation for [package/function]
 - [ ] Stack Overflow: [describe]
 - [ ] Course materials: [which ones]
 - [ ] Slack discussion
-- [ ] Office hours
+- [ x] Office hours
 - [ ] Other: [describe]
 
 
@@ -181,16 +182,16 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Reflection
 
 **What I understand well now:**
-[What clicked for you this week?]
+I really enjoyed learning ggplot this week. Working on code and then seeing a visualization was most helpful.
 
 **What I'm still confused about:**
-[What remains unclear? What questions do you have?]
+Perhaps not unclear, but I just need to continue to work on basic r coding. I frequently forget what functions to use and have to google them. I feel like I am growing in my understanding, but I still have a long way to go. 
 
 **How AI affected my learning this week:**
-[Did AI help you understand concepts better? Did it create confusion? Did it save time or create new problems? Be specific.]
+Overall, AI helps me check my coding process. I test an idea and then ask if I have used a function correctly. This has been most helpful. 
 
 **Evolving AI strategy:**
-[How are you getting better at using AI? What have you learned about when/how to use it effectively? What prompting strategies are working?]
+I think I am getting much better at using AI to help me understand how to code. I tend to phrase my prompts in very specific language which helps me narrow down the possible results that I can expect from AI.
 
 **Connection to historical research:**
-[How might this week's skills apply to your research?]
+I look forward to learning more about text analysis in the future and using AI to assist me in exploring text reuse. I would like to do a text reuse project on Residential Segregation Ordinances to study the impact of Greenville's 1912 ordinance had upon subsequent ordinances nationwide. 
