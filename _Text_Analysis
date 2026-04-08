@@ -69,16 +69,16 @@ tidy_sotu_sentences <- tidy_sotu %>%
 **How I evaluated the AI's suggestion:**
 
 **What I implemented and why:**
-[Which parts of the AI's suggestion were appropriate?]
+I returned to the documentation and looked noticed the use of output and input, so I decided to move forward with the AI suggestion. What I failed to do was to return to the dataframe that I was using (tidy_sotu) and check my column names.
 
 **What I modified and why:**
-[What did you change? Why was the change necessary?]
+I had to change "text" for "word" because there was no column labeled "text" in my dataframe. Once I got the correct column name, the code worked.
 
 **What I rejected and why:**
-[What suggestions did you not use? Why were they inappropriate?]
+
 
 **Additional resources I consulted:**
-- [ ] Documentation for [package/function]
+- [ x] Documentation for [package/function]
 - [ ] Stack Overflow: [describe]
 - [ ] Course materials: [which ones]
 - [ ] Slack discussion
