@@ -121,13 +121,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ---
 
-### Challenge 2: [Brief descriptive title]
+### Challenge 2: Filtering the sotu dataset to see the influence of technology on the length of SOTU speeches.
 
 **What I was trying to do:**
-[Describe the task or problem]
+I wanted to take the tidy_sotu dataset and filter it to first see if the advent of radio had an impact upon length of SOTU speeches compared to the speeches before radio became widespread in the USA. Then I wanted to compare that information with the effect that television had upon SOTU speech lengths. 
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I first began with the wrong dataset. The SOTU_length lacked a column for years. I had to look at the other datasets available to find one that had years listed for each speech. I also had to look up when the first SOTU speech was publicized on the radio and by what president. Although Harding gave the first SOTU that was on the radio in 1922, this was an experimental attempt and was limited to radios connected to the US Navy. I instead chose to use Calvin Coolidge's 1923 SOTU speech which was heard nationwide by millions of viewers. I also chose Johnson's 1965 primetime SOTU to measure television's impact. This speech was heard nationwide as opposed to Truman's 1947 speech which had limited viewing due to a lack of TV's nationwide. I asked co-pilot to assist with the code because I was unsure how to 
 
 **Did you use AI to troubleshoot this challenge?** [Yes / No]
 
