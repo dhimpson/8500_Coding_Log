@@ -1,20 +1,20 @@
-# Week [X] Learning Log
+# Week [8] Learning Log
 
-**Student Name:** [Your name]  
-**Week of:** [Date range]  
-**Topic(s):** [e.g., "Data Visualization with ggplot"]
+**Student Name:** Dori Impson  
+**Week of:** April 13-20  
+**Topic(s):** Topic Modeling
 
 ---
 
 ## What I Worked On This Week
 
 **Assignment(s):**
-- [ ] Worksheet [#]
+- [ ] Worksheet [#]8
 - [ ] Other: [describe]
 
 **AI tools used this week:**
 - [ ] ChatGPT
-- [ ] Claude
+- [ x] Claude
 - [ ] GitHub Copilot
 - [ ] Other: [specify]
 - [ ] Did not use AI this week
@@ -26,34 +26,40 @@
 ### Challenge 1: [Brief descriptive title]
 
 **What I was trying to do:**
-[Describe the task or problem]
+I needed to filter my data to remove underscores because aftet topic modeling the woman citizen data I found that my top term was _d. This is most likely due to a noisy OCR issue.
 
 **What went wrong:**
-[Describe the error, confusion, or roadblock]
+I was not sure how to filter for non-words. 
 
-**Did you use AI to troubleshoot this challenge?** [Yes / No]
+**Did you use AI to troubleshoot this challenge?** [Yes / No] Yes
+
 
 ---
 
 #### If YES, I used AI:
 
 **My prompt to AI:**
-```
-[Copy your exact prompt here]
+```How do I filter to remove _d from my term results in twc.topics?
 ```
 
 **AI's response:**
 ```r
-# Paste the relevant code or explanation AI provided -- this can brief and abbreviated or summarized if the response is long.
+#to clean this up, and to remove special characters like underscores, add another filter to only keep words that contain letters (and maybe apostrophes).
+tidy_twc <- tidy_twc %>% 
+  filter(!grepl('[0-9]', word)) %>%
+  filter(str_detect(word, "^[a-z']+$")) %>%
+  # ensures that words only containing lowercase letters and apostrophes from start to end.
+  filter(!word %in% c("a'noted","ing"))  # I had to add another filter to get rid of other noisy OCR issues. This one exclude this term which was dominating my results and most likely is an abbreviation of "annotated".
+   
 ```
 
 **How I evaluated the AI's suggestion:**
 
 **What I implemented and why:**
-[Which parts of the AI's suggestion were appropriate?]
+I thought through the code first to see if it was reasonable. Then, I ran it and looked at the tidy_twc dataframe to see if it had the desired results.
 
 **What I modified and why:**
-[What did you change? Why was the change necessary?]
+As noted above in my code block, I had to ask for further assistance in filtering apostrophes and "ing".
 
 **What I rejected and why:**
 [What suggestions did you not use? Why were they inappropriate?]
@@ -92,13 +98,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ---
 
 **Resolution:**
-[What ultimately worked or where you're still stuck]
+This solution worked well for me. It provided the desired result  and  also helped me better understand how to use the filter() to rid noisy OCR issues from my dataset. 
 
 **What I learned:**
-[What did this teach you? Did AI help or hinder your understanding?]
+It helped to remind me how to filter and provided the assistance to filter correctly.
 
 **Verification:**
-[How did you verify the code worked correctly? What did you test?]
+Ran the code, checked for desired results via View(twc.topics)
 
 ---
 
@@ -181,16 +187,17 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Reflection
 
 **What I understand well now:**
-[What clicked for you this week?]
+This week I better understand topic modeling. I enjoyed experimenting with different k values and seeing what values provided the best amount of topics. The worksheet provided an opportunity for me to tangibly work with Topic Modeling. I understand it much better after completing the worksheet.
 
 **What I'm still confused about:**
-[What remains unclear? What questions do you have?]
+I am still foggy about Beta vs. Gamma and the roll of each in Topic Modeling. I most likely just need to read and research a bit more about these two terms to better understand them. 
 
 **How AI affected my learning this week:**
 [Did AI help you understand concepts better? Did it create confusion? Did it save time or create new problems? Be specific.]
 
 **Evolving AI strategy:**
-[How are you getting better at using AI? What have you learned about when/how to use it effectively? What prompting strategies are working?]
+I am getting better at making my prompts precise and specific. I also often will check Claude's suggestions against Google Gemini to see if there is a consensus for how to address whatever question I have.
 
 **Connection to historical research:**
-[How might this week's skills apply to your research?]
+I have found a digitized archive of journals for the national realators association that would benefit topic modeling and text reuse.
+
