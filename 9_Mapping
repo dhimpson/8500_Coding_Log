@@ -1,0 +1,202 @@
+# Week [9] Learning Log
+
+**Student Name:**Dori Impson
+**Week of:** 4/20/26 to 4/27/26  
+**Topic(s):** Mapping
+
+---
+
+## What I Worked On This Week
+
+**Assignment(s):**
+- [ ] Worksheet [9]
+- [ ] Other: Attempting to get my website to deploy and upload to github
+
+**AI tools used this week:**
+- [ ] ChatGPT
+- [X ] Claude
+- [ X] GitHub Copilot
+- [ X] Other: Google Gemini
+- [ ] Did not use AI this week
+
+---
+
+## Challenges & Problem-Solving
+
+### Challenge 1: [Brief descriptive title]
+
+**What I was trying to do:**
+I was attempting to create a map that used my geocoded data from the Boston Women Voters dataset.
+
+**What went wrong:**
+My map displayed Massachussetus but was blank without any points ploted.
+
+**Did you use AI to troubleshoot this challenge?** [Yes / No]
+yes
+
+---
+
+#### If YES, I used AI:
+
+**My prompt to AI:**
+```
+"why does my map return blank without points"
+```
+
+**AI's response:**
+```r
+# the issue seems to be my filter code. The state needs to be Massachusetts, not MA. This solution worked well.
+```
+
+**How I evaluated the AI's suggestion:**
+
+**What I implemented and why:**
+I switched the filter for full state instead of abbreviation. 
+
+**What I modified and why:**
+I just had the filter set incorrectly. It was a mismatch for how the dataset was structured.
+
+**What I rejected and why:**
+[What suggestions did you not use? Why were they inappropriate?]
+
+**Additional resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+---
+
+#### If NO, I didn't use AI:
+
+**Why I chose not to use AI:**
+[Explain your reasoning - wanted to understand it myself, AI struggles with this type of problem, etc.]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+---
+
+**Resolution:**
+This worked fine and my map began to display with data plotted.
+
+**What I learned:**
+This just reminded me that I need to check column names and data before setting my filter. 
+
+**Verification:**
+Ran the code, looked at the map and noticed that it worked just fine.
+
+---
+
+### Challenge 2: [Brief descriptive title]
+
+**What I was trying to do:**
+Get my VS Code to sync with my github and my website
+
+**What went wrong:**
+Error displaying with SSH key
+
+**Did you use AI to troubleshoot this challenge?** [Yes / No]
+yes
+---
+
+#### If YES, I used AI:
+
+**My prompt to AI:**
+```
+when I try to push my hugo code from VS code to git hub I get this error on git hub: Error: Process completed with exit code 255.
+```
+
+**AI's response:**
+```r
+# Enable Hugo Extended: Most modern Hugo themes use SCSS. If your workflow uses a basic Hugo version, it will fail. In your .github/workflows/*.yml file, ensure extended: true is set:
+- name: Setup Hugo
+  uses: peaceiris/actions-hugo@v3
+  with:
+    hugo-version: 'latest'
+    extended: true # <--- This is usually the missing piece
+#this was the first of a long interaction to try to recify the issue after already addressing it with Dr. R. Eventually it just felt like I was in a loop with AI- it began to repeat the same series of things to check. Nothing worked.
+```
+
+**How I evaluated the AI's suggestion:**
+
+**What I implemented and why:**
+There were many steps that I tried. Nothing seemed drastic (remove or delete files)
+
+**What I modified and why:**
+[What did you change? Why was the change necessary?]
+
+**What I rejected and why:**
+[What suggestions did you not use? Why were they inappropriate?]
+
+**Additional resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ x] Office hours
+- [ ] Other: [describe]
+
+---
+
+#### If NO, I didn't use AI:
+
+**Why I chose not to use AI:**
+[Explain your reasoning - wanted to understand it myself, AI struggles with this type of problem, etc.]
+
+**My problem-solving process:**
+1. [First attempt - what you did and what happened]
+2. [Second attempt - what you did and what happened]
+3. [Additional attempts if relevant]
+
+**Resources I consulted:**
+- [ ] Documentation for [package/function]
+- [ ] Stack Overflow: [describe what you searched for]
+- [ ] Course materials: [which ones]
+- [ ] Slack discussion
+- [ ] Office hours
+- [ ] Other: [describe]
+
+---
+
+**Resolution:**
+I am still stuck. This is something that I need to come back to this summer with Dr. R.
+
+**What I learned:**
+I learned patience. Sometimes things are difficult to fix and sometimes I just need to pause and come back. 
+
+**Verification:**
+[How did you verify the code worked correctly? What did you test?]
+
+---
+
+## Reflection
+
+**What I understand well now:**
+This week I really enjoyed learning how to map data. This has been a topic that I have been looking forward to all semester. 
+
+**What I'm still confused about:**
+I would like to learn more about what maps work best for different types of data. How does a GIS map compare to a D3 map? How do I pick a type of mapping computer program for my data?
+
+**How AI affected my learning this week:**
+It helped me untangle the coding aspect of map making. I used it to double check my code and make sure that I had written things correctly so the code would display the map like I wanted it to.
+
+**Evolving AI strategy:**
+I  am getting better at asking specfic questions and also reigning in AI when it makes really bad suggestions. I feel more confident in my abilty to spot a bad AI code suggestion and can correct course if necessary.
+**Connection to historical research:**
+Learning how to code and map historical data is something that I have been wanting to learn for a long time. AI provides the ability to do that a little quicker than I would have been able to do without it. I appreciate that if something does not work, I can ask AI and have it check to see if I have made a mistake, like setting the filter incorrectly for my data.
